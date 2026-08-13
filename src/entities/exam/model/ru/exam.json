@@ -1,9 +1,11 @@
 {
-  "id": "demo-exam-2026",
+  "id": "anor-frontend-exam-2026",
   "version": 1,
+  "lang": "ru",
   "config": {
     "durationMinutes": 45,
     "totalQuestions": 35,
+    "totalPoints": 40,
     "passPercentage": 60,
     "maxViolations": 3,
     "shuffleQuestions": false,
@@ -14,472 +16,506 @@
       "id": "q-001",
       "order": 1,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Какой хук используется для хранения состояния в React-компоненте?",
+      "prompt": "Какой тип в TypeScript требует обязательного сужения (narrowing) перед использованием значения?",
       "options": [
-        { "id": "a", "text": "useEffect" },
-        { "id": "b", "text": "useState" },
-        { "id": "c", "text": "useMemo" },
-        { "id": "d", "text": "useRef" }
+        { "id": "a", "text": "any" },
+        { "id": "b", "text": "unknown" },
+        { "id": "c", "text": "never" },
+        { "id": "d", "text": "void" }
       ]
     },
     {
       "id": "q-002",
       "order": 2,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
       "correctOptionId": "c",
-      "prompt": "Какой хук предназначен для выполнения побочных эффектов?",
+      "prompt": "Какая конструкция автоматически объединяется при повторном объявлении с тем же именем (declaration merging)?",
       "options": [
-        { "id": "a", "text": "useState" },
-        { "id": "b", "text": "useMemo" },
-        { "id": "c", "text": "useEffect" },
-        { "id": "d", "text": "useId" }
+        { "id": "a", "text": "type alias" },
+        { "id": "b", "text": "enum" },
+        { "id": "c", "text": "interface" },
+        { "id": "d", "text": "const" }
       ]
     },
     {
       "id": "q-003",
       "order": 3,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Во что в итоге компилируется JSX-код?",
+      "correctOptionId": "a",
+      "prompt": "Что делает конструкция `as const`?",
       "options": [
-        { "id": "a", "text": "В HTML-строку" },
-        { "id": "b", "text": "В вызовы функции, создающей React-элементы" },
-        { "id": "c", "text": "В CSS-правила" },
-        { "id": "d", "text": "В JSON-объект" }
+        { "id": "a", "text": "Превращает значение в литеральный readonly-тип" },
+        { "id": "b", "text": "Приводит значение к типу any" },
+        { "id": "c", "text": "Создаёт глубокую копию объекта" },
+        { "id": "d", "text": "Проверяет тип во время выполнения" }
       ]
     },
     {
       "id": "q-004",
       "order": 4,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Зачем нужен проп `key` при рендере списка?",
+      "prompt": "Что вернёт выражение `user?.profile?.name`, если `user` равен `null`?",
       "options": [
-        { "id": "a", "text": "Для стилизации элемента" },
-        { "id": "b", "text": "Для идентификации элементов списка между обновлениями" },
-        { "id": "c", "text": "Для привязки обработчиков событий" },
-        { "id": "d", "text": "Для проверки типов пропсов" }
+        { "id": "a", "text": "null" },
+        { "id": "b", "text": "undefined" },
+        { "id": "c", "text": "Ошибку TypeError" },
+        { "id": "d", "text": "Пустую строку" }
       ]
     },
     {
       "id": "q-005",
       "order": 5,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "Для чего в основном используется хук `useMemo`?",
+      "correctOptionId": "c",
+      "prompt": "Какой utility type используется, чтобы взять из существующего типа только некоторые поля?",
       "options": [
-        { "id": "a", "text": "Для кеширования результата тяжёлых вычислений" },
-        { "id": "b", "text": "Для получения ссылки на DOM-элемент" },
-        { "id": "c", "text": "Для хранения глобального состояния" },
-        { "id": "d", "text": "Для обмена запросами с сервером" }
+        { "id": "a", "text": "Partial<T>" },
+        { "id": "b", "text": "Omit<T, K>" },
+        { "id": "c", "text": "Pick<T, K>" },
+        { "id": "d", "text": "Record<K, T>" }
       ]
     },
     {
       "id": "q-006",
       "order": 6,
       "type": "single_choice",
+      "topic": "html",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "Какой хук возвращает изменяемую ссылку, не вызывающую повторный рендер?",
+      "correctOptionId": "b",
+      "prompt": "Какой семантический тег правильно использовать для основного блока навигации страницы?",
       "options": [
-        { "id": "a", "text": "useRef" },
-        { "id": "b", "text": "useState" },
-        { "id": "c", "text": "useMemo" },
-        { "id": "d", "text": "useCallback" }
+        { "id": "a", "text": "<div class=\"nav\">" },
+        { "id": "b", "text": "<nav>" },
+        { "id": "c", "text": "<aside>" },
+        { "id": "d", "text": "<section>" }
       ]
     },
     {
       "id": "q-007",
       "order": 7,
       "type": "single_choice",
+      "topic": "html",
       "points": 1,
       "correctOptionId": "c",
-      "prompt": "На каком порту по умолчанию запускается dev-сервер Vite?",
+      "prompt": "Какой атрибут задаёт доступное имя для кнопки, состоящей только из иконки?",
       "options": [
-        { "id": "a", "text": "3000" },
-        { "id": "b", "text": "8080" },
-        { "id": "c", "text": "5173" },
-        { "id": "d", "text": "4200" }
+        { "id": "a", "text": "title" },
+        { "id": "b", "text": "alt" },
+        { "id": "c", "text": "aria-label" },
+        { "id": "d", "text": "name" }
       ]
     },
     {
       "id": "q-008",
       "order": 8,
       "type": "single_choice",
+      "topic": "css",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Какая команда создаёт production-сборку проекта на Vite?",
+      "prompt": "Что означает `box-sizing: border-box`?",
       "options": [
-        { "id": "a", "text": "vite serve" },
-        { "id": "b", "text": "vite build" },
-        { "id": "c", "text": "vite dev" },
-        { "id": "d", "text": "vite preview" }
+        { "id": "a", "text": "padding и border добавляются к ширине элемента" },
+        { "id": "b", "text": "padding и border входят внутрь заданной ширины элемента" },
+        { "id": "c", "text": "Элемент становится flex-контейнером" },
+        { "id": "d", "text": "margin тоже включается в общую ширину" }
       ]
     },
     {
       "id": "q-009",
       "order": 9,
       "type": "single_choice",
+      "topic": "css",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Как в TypeScript описать значение, которое может быть `string` или `number`?",
+      "correctOptionId": "c",
+      "prompt": "У какого из селекторов наибольшая специфичность (specificity)?",
       "options": [
-        { "id": "a", "text": "string & number" },
-        { "id": "b", "text": "string | number" },
-        { "id": "c", "text": "any" },
-        { "id": "d", "text": "unknown" }
+        { "id": "a", "text": ".card" },
+        { "id": "b", "text": "div p" },
+        { "id": "c", "text": "#header" },
+        { "id": "d", "text": "div" }
       ]
     },
     {
       "id": "q-010",
       "order": 10,
       "type": "single_choice",
+      "topic": "css",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Что делает `flex-direction: column` в CSS?",
+      "prompt": "Как работает `position: sticky`?",
       "options": [
-        { "id": "a", "text": "Располагает элементы горизонтально" },
-        { "id": "b", "text": "Располагает элементы вертикально" },
-        { "id": "c", "text": "Разбивает элементы по ячейкам grid" },
-        { "id": "d", "text": "Скрывает элементы" }
+        { "id": "a", "text": "Элемент всегда закреплён на экране" },
+        { "id": "b", "text": "Ведёт себя как relative до заданного порога, затем как fixed" },
+        { "id": "c", "text": "Элемент полностью выпадает из потока документа" },
+        { "id": "d", "text": "Работает только внутри `body`" }
       ]
     },
     {
       "id": "q-011",
       "order": 11,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
       "correctOptionId": "c",
-      "prompt": "Какой HTTP-статус возвращает сервер, если ресурс не найден?",
+      "prompt": "Какой из импортов допустим в FSD?",
       "options": [
-        { "id": "a", "text": "200" },
-        { "id": "b", "text": "301" },
-        { "id": "c", "text": "404" },
-        { "id": "d", "text": "500" }
+        { "id": "a", "text": "entities → features" },
+        { "id": "b", "text": "shared → entities" },
+        { "id": "c", "text": "features → entities" },
+        { "id": "d", "text": "entities → widgets" }
       ]
     },
     {
       "id": "q-012",
       "order": 12,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Какой статус-код сообщает об успешном создании ресурса?",
+      "correctOptionId": "a",
+      "prompt": "Какой порядок слоёв FSD правильный (сверху вниз)?",
       "options": [
-        { "id": "a", "text": "200" },
-        { "id": "b", "text": "201" },
-        { "id": "c", "text": "204" },
-        { "id": "d", "text": "202" }
+        { "id": "a", "text": "app → pages → widgets → features → entities → shared" },
+        { "id": "b", "text": "shared → entities → features → widgets → pages → app" },
+        { "id": "c", "text": "app → shared → entities → features → widgets → pages" },
+        { "id": "d", "text": "pages → app → widgets → shared → features → entities" }
       ]
     },
     {
       "id": "q-013",
       "order": 13,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Какой метод добавляет элемент в конец массива?",
+      "correctOptionId": "b",
+      "prompt": "К какому слою относятся хуки `useCreateProduct`, `useUpdateProduct`, `useDeleteProduct`?",
       "options": [
-        { "id": "a", "text": "shift()" },
-        { "id": "b", "text": "unshift()" },
-        { "id": "c", "text": "push()" },
-        { "id": "d", "text": "pop()" }
+        { "id": "a", "text": "entities" },
+        { "id": "b", "text": "features" },
+        { "id": "c", "text": "shared" },
+        { "id": "d", "text": "widgets" }
       ]
     },
     {
       "id": "q-014",
       "order": 14,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "Что возвращает `Array.prototype.map()`?",
+      "correctOptionId": "b",
+      "prompt": "В каком слое живут тип `IProduct` и хук `useProducts()`, который просто получает список?",
       "options": [
-        { "id": "a", "text": "Новый массив" },
-        { "id": "b", "text": "Изменённый исходный массив" },
-        { "id": "c", "text": "Объект" },
-        { "id": "d", "text": "undefined" }
+        { "id": "a", "text": "features" },
+        { "id": "b", "text": "entities" },
+        { "id": "c", "text": "pages" },
+        { "id": "d", "text": "app" }
       ]
     },
     {
       "id": "q-015",
       "order": 15,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "В чём главное различие между `const` и `let`?",
+      "correctOptionId": "b",
+      "prompt": "Зачем нужен файл `index.ts` в слайсе?",
       "options": [
-        { "id": "a", "text": "Объявленную через `const` привязку нельзя переприсвоить" },
-        { "id": "b", "text": "`const` используется только для чисел" },
-        { "id": "c", "text": "Между ними нет разницы" },
-        { "id": "d", "text": "`let` всегда имеет глобальную область видимости" }
+        { "id": "a", "text": "Чтобы собрать все файлы слайса в одном месте" },
+        { "id": "b", "text": "Чтобы открыть только публичный API и скрыть внутреннюю структуру" },
+        { "id": "c", "text": "Чтобы экспортировать тесты" },
+        { "id": "d", "text": "Чтобы уменьшить размер бандла" }
       ]
     },
     {
       "id": "q-016",
       "order": 16,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Что означает оператор `===` в JavaScript?",
+      "correctOptionId": "c",
+      "prompt": "Где в FSD должен лежать `useAuthStore` на Zustand (токены, persist)?",
       "options": [
-        { "id": "a", "text": "Присваивание значения" },
-        { "id": "b", "text": "Строгое сравнение без приведения типов" },
-        { "id": "c", "text": "Сравнение с приведением типов" },
-        { "id": "d", "text": "Проверку на неравенство" }
+        { "id": "a", "text": "app/store" },
+        { "id": "b", "text": "shared/store" },
+        { "id": "c", "text": "entities/user/model" },
+        { "id": "d", "text": "features/auth/ui" }
       ]
     },
     {
       "id": "q-017",
       "order": 17,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "В какое состояние переходит Promise, завершившийся с ошибкой?",
+      "correctOptionId": "a",
+      "prompt": "В каком слое должен находиться инстанс axios `$api`?",
       "options": [
-        { "id": "a", "text": "pending" },
-        { "id": "b", "text": "fulfilled" },
-        { "id": "c", "text": "rejected" },
-        { "id": "d", "text": "resolved" }
+        { "id": "a", "text": "shared/api" },
+        { "id": "b", "text": "entities/product/api" },
+        { "id": "c", "text": "app/api" },
+        { "id": "d", "text": "widgets/api" }
       ]
     },
     {
       "id": "q-018",
       "order": 18,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Что всегда возвращает `async`-функция?",
+      "prompt": "Может ли `entities/product` напрямую импортировать `entities/user`?",
       "options": [
-        { "id": "a", "text": "Строку" },
-        { "id": "b", "text": "Promise" },
-        { "id": "c", "text": "Callback" },
-        { "id": "d", "text": "undefined" }
+        { "id": "a", "text": "Да, они на одном слое" },
+        { "id": "b", "text": "Нет, соседние слайсы одного слоя не импортируют друг друга" },
+        { "id": "c", "text": "Только если это `type`-импорт" },
+        { "id": "d", "text": "Только через слой `app`" }
       ]
     },
     {
       "id": "q-019",
       "order": 19,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Как долго хранятся данные в `localStorage`?",
+      "correctOptionId": "d",
+      "prompt": "Что остаётся в самом `AdminProductsPage.tsx` после переноса 500 строк на FSD?",
       "options": [
-        { "id": "a", "text": "До закрытия вкладки" },
-        { "id": "b", "text": "До явной очистки" },
-        { "id": "c", "text": "В течение одного часа" },
-        { "id": "d", "text": "До перезагрузки страницы" }
+        { "id": "a", "text": "Все мутации и логика формы" },
+        { "id": "b", "text": "Только API-запросы" },
+        { "id": "c", "text": "Разметка таблицы и модальное окно" },
+        { "id": "d", "text": "Тонкая сборка виджетов и фич" }
       ]
     },
     {
       "id": "q-020",
       "order": 20,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
       "correctOptionId": "a",
-      "prompt": "Когда автоматически очищается `sessionStorage`?",
+      "prompt": "В чём главное различие между `useQuery` и `useMutation`?",
       "options": [
-        { "id": "a", "text": "При закрытии вкладки" },
-        { "id": "b", "text": "Никогда" },
-        { "id": "c", "text": "Каждый час" },
-        { "id": "d", "text": "При перезагрузке страницы" }
+        { "id": "a", "text": "useQuery срабатывает сам при рендере, useMutation — по вызову `mutate()`" },
+        { "id": "b", "text": "Оба запускаются автоматически при рендере" },
+        { "id": "c", "text": "useMutation тоже кеширует результат" },
+        { "id": "d", "text": "useQuery используется только для POST-запросов" }
       ]
     },
     {
       "id": "q-021",
       "order": 21,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Как должно быть записано имя React-компонента?",
+      "correctOptionId": "c",
+      "prompt": "Каким флагом проверяется состояние загрузки в `useMutation`?",
       "options": [
-        { "id": "a", "text": "camelCase" },
-        { "id": "b", "text": "PascalCase" },
-        { "id": "c", "text": "kebab-case" },
-        { "id": "d", "text": "snake_case" }
+        { "id": "a", "text": "isLoading" },
+        { "id": "b", "text": "isFetching" },
+        { "id": "c", "text": "isPending" },
+        { "id": "d", "text": "isBusy" }
       ]
     },
     {
       "id": "q-022",
       "order": 22,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "Что делает команда `npm ci`?",
+      "correctOptionId": "b",
+      "prompt": "Какую задачу выполняет `queryKey`?",
       "options": [
-        { "id": "a", "text": "Чисто устанавливает зависимости по lock-файлу" },
-        { "id": "b", "text": "Обновляет все пакеты до последних версий" },
-        { "id": "c", "text": "Запускает тесты" },
-        { "id": "d", "text": "Собирает проект" }
+        { "id": "a", "text": "Задаёт URL, на который уйдёт запрос" },
+        { "id": "b", "text": "Служит адресом данных в кеше" },
+        { "id": "c", "text": "Определяет порядок выполнения запросов" },
+        { "id": "d", "text": "Используется как ключ авторизации" }
       ]
     },
     {
       "id": "q-023",
       "order": 23,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Какая команда создаёт новую ветку и переключается на неё?",
+      "prompt": "Почему `new QueryClient()` создают вне компонента, а не внутри?",
       "options": [
-        { "id": "a", "text": "git merge" },
-        { "id": "b", "text": "git checkout -b" },
-        { "id": "c", "text": "git clone" },
-        { "id": "d", "text": "git pull" }
+        { "id": "a", "text": "Этого требует TypeScript" },
+        { "id": "b", "text": "Иначе кеш обнуляется на каждом рендере" },
+        { "id": "c", "text": "Только так работает DevTools" },
+        { "id": "d", "text": "Чтобы приложение работало без провайдера" }
       ]
     },
     {
       "id": "q-024",
       "order": 24,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "Как расшифровывается аббревиатура DOM?",
+      "correctOptionId": "c",
+      "prompt": "Что используется, чтобы список сам обновился после создания товара?",
       "options": [
-        { "id": "a", "text": "Document Object Model" },
-        { "id": "b", "text": "Data Object Manager" },
-        { "id": "c", "text": "Digital Ordered Map" },
-        { "id": "d", "text": "Document Oriented Markup" }
+        { "id": "a", "text": "window.location.reload()" },
+        { "id": "b", "text": "Вызов `refetch()` в каждом компоненте" },
+        { "id": "c", "text": "queryClient.invalidateQueries" },
+        { "id": "d", "text": "Повторный запрос внутри useEffect" }
       ]
     },
     {
       "id": "q-025",
       "order": 25,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Какой тег в HTML используется для заголовка высшего уровня?",
+      "correctOptionId": "a",
+      "prompt": "Чем отличается `mutate` от `mutateAsync`?",
       "options": [
-        { "id": "a", "text": "<h6>" },
-        { "id": "b", "text": "<h1>" },
-        { "id": "c", "text": "<title>" },
-        { "id": "d", "text": "<header>" }
+        { "id": "a", "text": "`mutateAsync` возвращает Promise, который можно `await`" },
+        { "id": "b", "text": "`mutate` вообще не ловит ошибки" },
+        { "id": "c", "text": "`mutateAsync` автоматически очищает кеш" },
+        { "id": "d", "text": "Между ними нет разницы" }
       ]
     },
     {
       "id": "q-026",
       "order": 26,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Какой семантический тег подходит для блока навигации?",
+      "prompt": "Почему тип ответа `IProduct` и тип payload на создание должны быть разными?",
       "options": [
-        { "id": "a", "text": "<div>" },
-        { "id": "b", "text": "<nav>" },
-        { "id": "c", "text": "<section>" },
-        { "id": "d", "text": "<aside>" }
+        { "id": "a", "text": "TypeScript не разрешает два одинаковых типа" },
+        { "id": "b", "text": "В отправляемом объекте нет `id`, а вместо `category` — `categoryId`" },
+        { "id": "c", "text": "Ответ сервера всегда приходит как `any`" },
+        { "id": "d", "text": "Это вопрос стиля кода, а не технической необходимости" }
       ]
     },
     {
       "id": "q-027",
       "order": 27,
       "type": "single_choice",
+      "topic": "auth",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Какая CSS-единица вычисляется относительно размера шрифта корневого элемента?",
+      "correctOptionId": "b",
+      "prompt": "Где должен храниться `access_token`?",
       "options": [
-        { "id": "a", "text": "px" },
-        { "id": "b", "text": "em" },
-        { "id": "c", "text": "rem" },
-        { "id": "d", "text": "vh" }
+        { "id": "a", "text": "В кеше TanStack Query" },
+        { "id": "b", "text": "В Zustand — это клиентское состояние" },
+        { "id": "c", "text": "В `useState` компонента" },
+        { "id": "d", "text": "В параметре URL" }
       ]
     },
     {
       "id": "q-028",
       "order": 28,
       "type": "single_choice",
+      "topic": "auth",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Чем управляет свойство `z-index`?",
+      "correctOptionId": "c",
+      "prompt": "Где должен храниться профиль пользователя (`useProfile`)?",
       "options": [
-        { "id": "a", "text": "Прозрачностью элемента" },
-        { "id": "b", "text": "Порядком наложения элементов друг на друга" },
-        { "id": "c", "text": "Размером элемента" },
-        { "id": "d", "text": "Типом позиционирования" }
+        { "id": "a", "text": "В Zustand, вместе с токенами" },
+        { "id": "b", "text": "В localStorage" },
+        { "id": "c", "text": "В TanStack Query — это серверное состояние" },
+        { "id": "d", "text": "В React Context" }
       ]
     },
     {
       "id": "q-029",
       "order": 29,
       "type": "single_choice",
+      "topic": "auth",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Что из перечисленного является библиотекой управления состоянием?",
+      "correctOptionId": "b",
+      "prompt": "Что обычно делает интерцептор ответа, когда сервер возвращает 401?",
       "options": [
-        { "id": "a", "text": "axios" },
-        { "id": "b", "text": "dayjs" },
-        { "id": "c", "text": "zustand" },
-        { "id": "d", "text": "vite" }
+        { "id": "a", "text": "Сразу разлогинивает пользователя и больше ничего" },
+        { "id": "b", "text": "Получает новый `access_token` по `refresh_token` и повторяет запрос" },
+        { "id": "c", "text": "Отменяет запрос и очищает кеш" },
+        { "id": "d", "text": "Автоматически перезагружает страницу" }
       ]
     },
     {
       "id": "q-030",
       "order": 30,
       "type": "single_choice",
+      "topic": "testing",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Что делает приём `debounce`?",
+      "correctOptionId": "c",
+      "prompt": "Какой префикс Testing Library используется, чтобы проверить, что элемента НЕТ на экране?",
       "options": [
-        { "id": "a", "text": "Вызывает функцию немедленно" },
-        { "id": "b", "text": "Откладывает выполнение функции до паузы в вызовах" },
-        { "id": "c", "text": "Повторяет функцию заданное число раз" },
-        { "id": "d", "text": "Полностью отменяет функцию" }
+        { "id": "a", "text": "getBy…" },
+        { "id": "b", "text": "findBy…" },
+        { "id": "c", "text": "queryBy…" },
+        { "id": "d", "text": "getAllBy…" }
       ]
     },
     {
       "id": "q-031",
       "order": 31,
       "type": "open_text",
+      "topic": "fsd",
       "points": 2,
-      "prompt": "Какой механизм React использует для сравнения с реальным DOM?",
-      "acceptedAnswers": [
-        "виртуальный dom",
-        "виртуальный дом",
-        "virtual dom",
-        "virtual-dom",
-        "виртуальная dom-модель"
-      ]
+      "prompt": "В каком слое FSD лежит переиспользуемый код без отношения к бизнесу (UI-kit, API-клиент, утилиты)? Напишите название слоя.",
+      "acceptedAnswers": ["shared", "слой shared", "shared layer", "shared/"]
     },
     {
       "id": "q-032",
       "order": 32,
       "type": "open_text",
+      "topic": "testing",
       "points": 2,
-      "prompt": "Какой HTTP-метод обычно используется для создания нового ресурса на сервере?",
-      "acceptedAnswers": ["post", "метод post", "post-запрос", "http post"]
+      "prompt": "Как называется формула из трёх шагов, из которых состоит любой тест? Напишите три слова по порядку.",
+      "acceptedAnswers": [
+        "arrange act assert",
+        "arrange, act, assert",
+        "aaa",
+        "подготовили выполнили проверили"
+      ]
     },
     {
       "id": "q-033",
       "order": 33,
       "type": "open_text",
+      "topic": "tanstack-query",
       "points": 2,
-      "prompt": "Какое CSS-свойство отвечает за цвет текста?",
-      "acceptedAnswers": ["color", "свойство color", "css color"]
+      "prompt": "Какой метод `queryClient` вызывают после мутации, чтобы пометить кеш устаревшим и перезагрузить список? Напишите название метода.",
+      "acceptedAnswers": [
+        "invalidatequeries",
+        "invalidate queries",
+        "queryclient.invalidatequeries",
+        "invalidatequeries()"
+      ]
     },
     {
       "id": "q-034",
       "order": 34,
       "type": "open_text",
+      "topic": "testing",
       "points": 2,
-      "prompt": "Какое ключевое слово в JavaScript объявляет переменную, которую нельзя переприсвоить?",
-      "acceptedAnswers": ["const", "ключевое слово const"]
+      "prompt": "Какой префикс Testing Library используется, чтобы дождаться элемента, появляющегося после запроса?",
+      "acceptedAnswers": ["findby", "findby...", "find by", "findbytext", "findby…"]
     },
     {
       "id": "q-035",
       "order": 35,
       "type": "open_text",
+      "topic": "fsd",
       "points": 2,
-      "prompt": "Как полностью расшифровывается аббревиатура API?",
-      "acceptedAnswers": [
-        "application programming interface",
-        "интерфейс программирования приложений",
-        "программный интерфейс приложения",
-        "прикладной программный интерфейс"
-      ]
+      "prompt": "Через какой файл открывается публичный API каждого слайса в FSD? Напишите имя файла.",
+      "acceptedAnswers": ["index.ts", "index ts", "indexts", "index", "index.tsx"]
     }
   ]
 }

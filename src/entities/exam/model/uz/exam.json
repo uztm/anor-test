@@ -1,9 +1,11 @@
 {
-  "id": "demo-exam-2026",
+  "id": "anor-frontend-exam-2026",
   "version": 1,
+  "lang": "uz",
   "config": {
     "durationMinutes": 45,
     "totalQuestions": 35,
+    "totalPoints": 40,
     "passPercentage": 60,
     "maxViolations": 3,
     "shuffleQuestions": false,
@@ -14,471 +16,506 @@
       "id": "q-001",
       "order": 1,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "React komponentida holatni saqlash uchun qaysi hook ishlatiladi?",
+      "prompt": "TypeScript'da qaysi tur qiymatdan foydalanishdan oldin uni tekshirishni (narrowing) majburiy qiladi?",
       "options": [
-        { "id": "a", "text": "useEffect" },
-        { "id": "b", "text": "useState" },
-        { "id": "c", "text": "useMemo" },
-        { "id": "d", "text": "useRef" }
+        { "id": "a", "text": "any" },
+        { "id": "b", "text": "unknown" },
+        { "id": "c", "text": "never" },
+        { "id": "d", "text": "void" }
       ]
     },
     {
       "id": "q-002",
       "order": 2,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
       "correctOptionId": "c",
-      "prompt": "Yon effektlarni (side effects) bajarish uchun qaysi hook mo'ljallangan?",
+      "prompt": "Bir xil nom bilan qayta e'lon qilinganda avtomatik birlashadigan (declaration merging) konstruksiya qaysi?",
       "options": [
-        { "id": "a", "text": "useState" },
-        { "id": "b", "text": "useMemo" },
-        { "id": "c", "text": "useEffect" },
-        { "id": "d", "text": "useId" }
+        { "id": "a", "text": "type alias" },
+        { "id": "b", "text": "enum" },
+        { "id": "c", "text": "interface" },
+        { "id": "d", "text": "const" }
       ]
     },
     {
       "id": "q-003",
       "order": 3,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "JSX kod oxir-oqibat nimaga kompilyatsiya qilinadi?",
+      "correctOptionId": "a",
+      "prompt": "`as const` konstruksiyasi nima qiladi?",
       "options": [
-        { "id": "a", "text": "HTML satriga" },
-        { "id": "b", "text": "React elementlarini yaratuvchi funksiya chaqiruvlariga" },
-        { "id": "c", "text": "CSS qoidalariga" },
-        { "id": "d", "text": "JSON obyektiga" }
+        { "id": "a", "text": "Qiymatni literal va readonly turga aylantiradi" },
+        { "id": "b", "text": "Qiymatni any turiga aylantiradi" },
+        { "id": "c", "text": "Obyektning chuqur nusxasini (deep clone) yaratadi" },
+        { "id": "d", "text": "Turni runtime'da tekshiradi" }
       ]
     },
     {
       "id": "q-004",
       "order": 4,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Ro'yxatni render qilishda `key` propi nima uchun kerak?",
+      "prompt": "`user?.profile?.name` ifodasi `user` qiymati `null` bo'lganda nima qaytaradi?",
       "options": [
-        { "id": "a", "text": "Elementni stillash uchun" },
-        { "id": "b", "text": "Ro'yxat elementlarini o'zgarishlar orasida aniqlash uchun" },
-        { "id": "c", "text": "Hodisalarni biriktirish uchun" },
-        { "id": "d", "text": "Proplar turini tekshirish uchun" }
+        { "id": "a", "text": "null" },
+        { "id": "b", "text": "undefined" },
+        { "id": "c", "text": "TypeError xatosi" },
+        { "id": "d", "text": "Bo'sh satr" }
       ]
     },
     {
       "id": "q-005",
       "order": 5,
       "type": "single_choice",
+      "topic": "typescript",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "`useMemo` hooki asosan nima uchun ishlatiladi?",
+      "correctOptionId": "c",
+      "prompt": "Mavjud turdan faqat ba'zi maydonlarni tanlab olish uchun qaysi utility type ishlatiladi?",
       "options": [
-        { "id": "a", "text": "Og'ir hisob-kitob natijasini keshlash uchun" },
-        { "id": "b", "text": "DOM elementiga havola olish uchun" },
-        { "id": "c", "text": "Global holatni saqlash uchun" },
-        { "id": "d", "text": "Server bilan so'rov almashish uchun" }
+        { "id": "a", "text": "Partial<T>" },
+        { "id": "b", "text": "Omit<T, K>" },
+        { "id": "c", "text": "Pick<T, K>" },
+        { "id": "d", "text": "Record<K, T>" }
       ]
     },
     {
       "id": "q-006",
       "order": 6,
       "type": "single_choice",
+      "topic": "html",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "Qayta renderni keltirib chiqarmaydigan o'zgaruvchan havolani qaysi hook qaytaradi?",
+      "correctOptionId": "b",
+      "prompt": "Sahifaning asosiy navigatsiya bloki uchun qaysi semantik teg to'g'ri?",
       "options": [
-        { "id": "a", "text": "useRef" },
-        { "id": "b", "text": "useState" },
-        { "id": "c", "text": "useMemo" },
-        { "id": "d", "text": "useCallback" }
+        { "id": "a", "text": "<div class=\"nav\">" },
+        { "id": "b", "text": "<nav>" },
+        { "id": "c", "text": "<aside>" },
+        { "id": "d", "text": "<section>" }
       ]
     },
     {
       "id": "q-007",
       "order": 7,
       "type": "single_choice",
+      "topic": "html",
       "points": 1,
       "correctOptionId": "c",
-      "prompt": "Vite dev serveri sukut bo'yicha qaysi portda ishga tushadi?",
+      "prompt": "Faqat ikonkadan iborat tugmaga screen reader uchun nom berish uchun qaysi atribut ishlatiladi?",
       "options": [
-        { "id": "a", "text": "3000" },
-        { "id": "b", "text": "8080" },
-        { "id": "c", "text": "5173" },
-        { "id": "d", "text": "4200" }
+        { "id": "a", "text": "title" },
+        { "id": "b", "text": "alt" },
+        { "id": "c", "text": "aria-label" },
+        { "id": "d", "text": "name" }
       ]
     },
     {
       "id": "q-008",
       "order": 8,
       "type": "single_choice",
+      "topic": "css",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Vite loyihasining production build'ini qaysi buyruq yaratadi?",
+      "prompt": "`box-sizing: border-box` nimani anglatadi?",
       "options": [
-        { "id": "a", "text": "vite serve" },
-        { "id": "b", "text": "vite build" },
-        { "id": "c", "text": "vite dev" },
-        { "id": "d", "text": "vite preview" }
+        { "id": "a", "text": "padding va border element kengligiga qo'shimcha qo'shiladi" },
+        { "id": "b", "text": "padding va border element kengligi ichida hisoblanadi" },
+        { "id": "c", "text": "Element flex konteynerga aylanadi" },
+        { "id": "d", "text": "margin ham umumiy kenglikka kiradi" }
       ]
     },
     {
       "id": "q-009",
       "order": 9,
       "type": "single_choice",
+      "topic": "css",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "TypeScriptda qiymat `string` yoki `number` bo'lishi mumkinligi qanday tavsiflanadi?",
+      "correctOptionId": "c",
+      "prompt": "Quyidagi selektorlardan qaysi birining ustunligi (specificity) eng yuqori?",
       "options": [
-        { "id": "a", "text": "string & number" },
-        { "id": "b", "text": "string | number" },
-        { "id": "c", "text": "any" },
-        { "id": "d", "text": "unknown" }
+        { "id": "a", "text": ".card" },
+        { "id": "b", "text": "div p" },
+        { "id": "c", "text": "#header" },
+        { "id": "d", "text": "div" }
       ]
     },
     {
       "id": "q-010",
       "order": 10,
       "type": "single_choice",
+      "topic": "css",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "CSSda `flex-direction: column` nima qiladi?",
+      "prompt": "`position: sticky` qanday ishlaydi?",
       "options": [
-        { "id": "a", "text": "Elementlarni gorizontal joylashtiradi" },
-        { "id": "b", "text": "Elementlarni vertikal joylashtiradi" },
-        { "id": "c", "text": "Elementlarni grid katakchalariga bo'ladi" },
-        { "id": "d", "text": "Elementlarni yashiradi" }
+        { "id": "a", "text": "Element doim ekranga yopishib turadi" },
+        { "id": "b", "text": "Belgilangan chegaraga yetguncha relative, keyin fixed kabi harakat qiladi" },
+        { "id": "c", "text": "Element hujjat oqimidan butunlay chiqariladi" },
+        { "id": "d", "text": "Faqat `body` ichida ishlaydi" }
       ]
     },
     {
       "id": "q-011",
       "order": 11,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
       "correctOptionId": "c",
-      "prompt": "Resurs topilmaganda server qaysi HTTP status kodini qaytaradi?",
+      "prompt": "FSD'da quyidagi importlardan qaysi biri to'g'ri?",
       "options": [
-        { "id": "a", "text": "200" },
-        { "id": "b", "text": "301" },
-        { "id": "c", "text": "404" },
-        { "id": "d", "text": "500" }
+        { "id": "a", "text": "entities → features" },
+        { "id": "b", "text": "shared → entities" },
+        { "id": "c", "text": "features → entities" },
+        { "id": "d", "text": "entities → widgets" }
       ]
     },
     {
       "id": "q-012",
       "order": 12,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "Resurs muvaffaqiyatli yaratilganini qaysi status kodi bildiradi?",
+      "correctOptionId": "a",
+      "prompt": "FSD qatlamlarining to'g'ri tartibi (yuqoridan pastga) qaysi?",
       "options": [
-        { "id": "a", "text": "200" },
-        { "id": "b", "text": "201" },
-        { "id": "c", "text": "204" },
-        { "id": "d", "text": "202" }
+        { "id": "a", "text": "app → pages → widgets → features → entities → shared" },
+        { "id": "b", "text": "shared → entities → features → widgets → pages → app" },
+        { "id": "c", "text": "app → shared → entities → features → widgets → pages" },
+        { "id": "d", "text": "pages → app → widgets → shared → features → entities" }
       ]
     },
     {
       "id": "q-013",
       "order": 13,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Massiv oxiriga element qo'shish uchun qaysi metod ishlatiladi?",
+      "correctOptionId": "b",
+      "prompt": "`useCreateProduct`, `useUpdateProduct`, `useDeleteProduct` hook'lari qaysi qatlamga tegishli?",
       "options": [
-        { "id": "a", "text": "shift()" },
-        { "id": "b", "text": "unshift()" },
-        { "id": "c", "text": "push()" },
-        { "id": "d", "text": "pop()" }
+        { "id": "a", "text": "entities" },
+        { "id": "b", "text": "features" },
+        { "id": "c", "text": "shared" },
+        { "id": "d", "text": "widgets" }
       ]
     },
     {
       "id": "q-014",
       "order": 14,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "`Array.prototype.map()` nimani qaytaradi?",
+      "correctOptionId": "b",
+      "prompt": "`IProduct` turi va ro'yxatni oladigan `useProducts()` hook'i qaysi qatlamda yashaydi?",
       "options": [
-        { "id": "a", "text": "Yangi massiv" },
-        { "id": "b", "text": "O'zgartirilgan asl massiv" },
-        { "id": "c", "text": "Obyekt" },
-        { "id": "d", "text": "undefined" }
+        { "id": "a", "text": "features" },
+        { "id": "b", "text": "entities" },
+        { "id": "c", "text": "pages" },
+        { "id": "d", "text": "app" }
       ]
     },
     {
       "id": "q-015",
       "order": 15,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "`const` va `let` o'rtasidagi asosiy farq nima?",
+      "correctOptionId": "b",
+      "prompt": "Slice'ning `index.ts` fayli nima uchun kerak?",
       "options": [
-        { "id": "a", "text": "`const` bilan e'lon qilingan bog'lanish qayta tayinlanmaydi" },
-        { "id": "b", "text": "`const` faqat raqamlar uchun ishlatiladi" },
-        { "id": "c", "text": "Ular orasida farq yo'q" },
-        { "id": "d", "text": "`let` har doim global ko'rinish sohasiga ega" }
+        { "id": "a", "text": "Barcha fayllarni bitta joyga yig'ish uchun" },
+        { "id": "b", "text": "Faqat public API'ni ochib, ichki tuzilmani yashirish uchun" },
+        { "id": "c", "text": "Testlarni eksport qilish uchun" },
+        { "id": "d", "text": "Bundle hajmini kamaytirish uchun" }
       ]
     },
     {
       "id": "q-016",
       "order": 16,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "JavaScriptda `===` operatori nimani bildiradi?",
+      "correctOptionId": "c",
+      "prompt": "Zustand'dagi `useAuthStore` (tokenlar, persist) FSD'da qayerga joylashadi?",
       "options": [
-        { "id": "a", "text": "Qiymat tayinlash" },
-        { "id": "b", "text": "Tur keltirmasdan qat'iy tenglikni tekshirish" },
-        { "id": "c", "text": "Tur keltirib tenglikni tekshirish" },
-        { "id": "d", "text": "Tengsizlikni tekshirish" }
+        { "id": "a", "text": "app/store" },
+        { "id": "b", "text": "shared/store" },
+        { "id": "c", "text": "entities/user/model" },
+        { "id": "d", "text": "features/auth/ui" }
       ]
     },
     {
       "id": "q-017",
       "order": 17,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Xatolik bilan yakunlangan Promise qaysi holatga o'tadi?",
+      "correctOptionId": "a",
+      "prompt": "Axios instansi `$api` qaysi qatlamda bo'lishi kerak?",
       "options": [
-        { "id": "a", "text": "pending" },
-        { "id": "b", "text": "fulfilled" },
-        { "id": "c", "text": "rejected" },
-        { "id": "d", "text": "resolved" }
+        { "id": "a", "text": "shared/api" },
+        { "id": "b", "text": "entities/product/api" },
+        { "id": "c", "text": "app/api" },
+        { "id": "d", "text": "widgets/api" }
       ]
     },
     {
       "id": "q-018",
       "order": 18,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "`async` funksiya har doim nimani qaytaradi?",
+      "prompt": "`entities/product` to'g'ridan-to'g'ri `entities/user`dan import qila oladimi?",
       "options": [
-        { "id": "a", "text": "Satrni" },
-        { "id": "b", "text": "Promise'ni" },
-        { "id": "c", "text": "Callback'ni" },
-        { "id": "d", "text": "undefined" }
+        { "id": "a", "text": "Ha, ular bir xil qatlamda" },
+        { "id": "b", "text": "Yo'q, bir qatlamdagi qo'shni slice'lar bir-birini import qilmaydi" },
+        { "id": "c", "text": "Faqat `type` import bo'lsa mumkin" },
+        { "id": "d", "text": "Faqat `app` qatlami orqali mumkin" }
       ]
     },
     {
       "id": "q-019",
       "order": 19,
       "type": "single_choice",
+      "topic": "fsd",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "`localStorage`dagi ma'lumot qancha vaqt saqlanadi?",
+      "correctOptionId": "d",
+      "prompt": "500 qatorli `AdminProductsPage.tsx` FSD'ga ko'chirilgandan keyin sahifaning o'zida nima qoladi?",
       "options": [
-        { "id": "a", "text": "Tab yopilgunga qadar" },
-        { "id": "b", "text": "Qo'lda tozalanmaguncha" },
-        { "id": "c", "text": "Bir soat davomida" },
-        { "id": "d", "text": "Sahifa yangilangunga qadar" }
+        { "id": "a", "text": "Barcha mutatsiyalar va forma logikasi" },
+        { "id": "b", "text": "Faqat API so'rovlari" },
+        { "id": "c", "text": "Jadval markup'i va modal oynasi" },
+        { "id": "d", "text": "Widget va feature'larni yig'adigan yupqa qatlam" }
       ]
     },
     {
       "id": "q-020",
       "order": 20,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
       "correctOptionId": "a",
-      "prompt": "`sessionStorage` qachon avtomatik tozalanadi?",
+      "prompt": "`useQuery` va `useMutation` orasidagi asosiy farq nimada?",
       "options": [
-        { "id": "a", "text": "Tab yopilganda" },
-        { "id": "b", "text": "Hech qachon" },
-        { "id": "c", "text": "Har soatda" },
-        { "id": "d", "text": "Sahifa yangilanganda" }
+        { "id": "a", "text": "useQuery render'da o'zi ishga tushadi, useMutation esa `mutate()` chaqirilganda" },
+        { "id": "b", "text": "Ikkalasi ham render paytida avtomatik ishga tushadi" },
+        { "id": "c", "text": "useMutation ham natijani keshlaydi" },
+        { "id": "d", "text": "useQuery faqat POST so'rovlari uchun ishlatiladi" }
       ]
     },
     {
       "id": "q-021",
       "order": 21,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "React komponenti nomi qanday yozilishi kerak?",
+      "correctOptionId": "c",
+      "prompt": "`useMutation`da yuklanish holati qaysi flag orqali tekshiriladi?",
       "options": [
-        { "id": "a", "text": "camelCase" },
-        { "id": "b", "text": "PascalCase" },
-        { "id": "c", "text": "kebab-case" },
-        { "id": "d", "text": "snake_case" }
+        { "id": "a", "text": "isLoading" },
+        { "id": "b", "text": "isFetching" },
+        { "id": "c", "text": "isPending" },
+        { "id": "d", "text": "isBusy" }
       ]
     },
     {
       "id": "q-022",
       "order": 22,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "`npm ci` buyrug'i nima qiladi?",
+      "correctOptionId": "b",
+      "prompt": "`queryKey` qanday vazifani bajaradi?",
       "options": [
-        { "id": "a", "text": "Bog'liqliklarni lock fayl asosida toza o'rnatadi" },
-        { "id": "b", "text": "Barcha paketlarni oxirgi versiyaga yangilaydi" },
-        { "id": "c", "text": "Testlarni ishga tushiradi" },
-        { "id": "d", "text": "Loyihani build qiladi" }
+        { "id": "a", "text": "So'rov yuboriladigan URL manzilini belgilaydi" },
+        { "id": "b", "text": "Ma'lumotning keshdagi manzili bo'lib xizmat qiladi" },
+        { "id": "c", "text": "So'rovlar bajarilish tartibini belgilaydi" },
+        { "id": "d", "text": "Autentifikatsiya kaliti sifatida ishlatiladi" }
       ]
     },
     {
       "id": "q-023",
       "order": 23,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Yangi branch yaratib, unga o'tish uchun qaysi buyruq ishlatiladi?",
+      "prompt": "Nega `new QueryClient()` komponent ichida emas, undan tashqarida yaratiladi?",
       "options": [
-        { "id": "a", "text": "git merge" },
-        { "id": "b", "text": "git checkout -b" },
-        { "id": "c", "text": "git clone" },
-        { "id": "d", "text": "git pull" }
+        { "id": "a", "text": "TypeScript shuni talab qiladi" },
+        { "id": "b", "text": "Aks holda har render'da kesh nolga tushib ketadi" },
+        { "id": "c", "text": "DevTools faqat shunda ishlaydi" },
+        { "id": "d", "text": "Provider'siz ishlashi uchun" }
       ]
     },
     {
       "id": "q-024",
       "order": 24,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "a",
-      "prompt": "DOM qisqartmasi nimani anglatadi?",
+      "correctOptionId": "c",
+      "prompt": "Yangi mahsulot yaratilgandan keyin ro'yxat o'zi yangilanishi uchun nima ishlatiladi?",
       "options": [
-        { "id": "a", "text": "Document Object Model" },
-        { "id": "b", "text": "Data Object Manager" },
-        { "id": "c", "text": "Digital Ordered Map" },
-        { "id": "d", "text": "Document Oriented Markup" }
+        { "id": "a", "text": "window.location.reload()" },
+        { "id": "b", "text": "Har bir komponentda `refetch()` chaqirish" },
+        { "id": "c", "text": "queryClient.invalidateQueries" },
+        { "id": "d", "text": "useEffect ichida qayta so'rov yuborish" }
       ]
     },
     {
       "id": "q-025",
       "order": 25,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "HTMLda eng yuqori darajali sarlavha uchun qaysi teg ishlatiladi?",
+      "correctOptionId": "a",
+      "prompt": "`mutate` va `mutateAsync` orasidagi farq nima?",
       "options": [
-        { "id": "a", "text": "<h6>" },
-        { "id": "b", "text": "<h1>" },
-        { "id": "c", "text": "<title>" },
-        { "id": "d", "text": "<header>" }
+        { "id": "a", "text": "`mutateAsync` Promise qaytaradi va uni `await` qilish mumkin" },
+        { "id": "b", "text": "`mutate` xatolarni umuman ushlamaydi" },
+        { "id": "c", "text": "`mutateAsync` keshni avtomatik tozalaydi" },
+        { "id": "d", "text": "Ular orasida hech qanday farq yo'q" }
       ]
     },
     {
       "id": "q-026",
       "order": 26,
       "type": "single_choice",
+      "topic": "tanstack-query",
       "points": 1,
       "correctOptionId": "b",
-      "prompt": "Navigatsiya bloki uchun qaysi semantik teg to'g'ri keladi?",
+      "prompt": "Serverdan keladigan `IProduct` va yaratishga yuboriladigan payload nega alohida turlar bo'lishi kerak?",
       "options": [
-        { "id": "a", "text": "<div>" },
-        { "id": "b", "text": "<nav>" },
-        { "id": "c", "text": "<section>" },
-        { "id": "d", "text": "<aside>" }
+        { "id": "a", "text": "TypeScript ikkita bir xil turni ruxsat bermaydi" },
+        { "id": "b", "text": "Yuboriladigan obyektda `id` yo'q va `category` o'rniga `categoryId` bo'ladi" },
+        { "id": "c", "text": "Server javobi doim `any` turida keladi" },
+        { "id": "d", "text": "Bu faqat kod uslubi masalasi, texnik zarurat emas" }
       ]
     },
     {
       "id": "q-027",
       "order": 27,
       "type": "single_choice",
+      "topic": "auth",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Qaysi CSS birligi ildiz element shrift o'lchamiga nisbatan hisoblanadi?",
+      "correctOptionId": "b",
+      "prompt": "`access_token` qayerda saqlanishi kerak?",
       "options": [
-        { "id": "a", "text": "px" },
-        { "id": "b", "text": "em" },
-        { "id": "c", "text": "rem" },
-        { "id": "d", "text": "vh" }
+        { "id": "a", "text": "TanStack Query keshida" },
+        { "id": "b", "text": "Zustand'da — bu mijoz (client) holati" },
+        { "id": "c", "text": "Komponent `useState`ida" },
+        { "id": "d", "text": "URL parametrida" }
       ]
     },
     {
       "id": "q-028",
       "order": 28,
       "type": "single_choice",
+      "topic": "auth",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "`z-index` xossasi nimani boshqaradi?",
+      "correctOptionId": "c",
+      "prompt": "Foydalanuvchi profili (`useProfile`) qayerda saqlanishi kerak?",
       "options": [
-        { "id": "a", "text": "Elementning shaffofligini" },
-        { "id": "b", "text": "Elementlarning ustma-ust joylashuv tartibini" },
-        { "id": "c", "text": "Elementning o'lchamini" },
-        { "id": "d", "text": "Pozitsiyalash turini" }
+        { "id": "a", "text": "Zustand'da, tokenlar bilan birga" },
+        { "id": "b", "text": "localStorage'da" },
+        { "id": "c", "text": "TanStack Query'da — bu server holati" },
+        { "id": "d", "text": "React Context'da" }
       ]
     },
     {
       "id": "q-029",
       "order": 29,
       "type": "single_choice",
+      "topic": "auth",
       "points": 1,
-      "correctOptionId": "c",
-      "prompt": "Quyidagilardan qaysi biri holatni boshqarish kutubxonasi hisoblanadi?",
+      "correctOptionId": "b",
+      "prompt": "Server 401 qaytarganda response interceptor odatda nima qiladi?",
       "options": [
-        { "id": "a", "text": "axios" },
-        { "id": "b", "text": "dayjs" },
-        { "id": "c", "text": "zustand" },
-        { "id": "d", "text": "vite" }
+        { "id": "a", "text": "Foydalanuvchini darhol tizimdan chiqaradi va boshqa hech narsa qilmaydi" },
+        { "id": "b", "text": "`refresh_token` bilan yangi `access_token` oladi va so'rovni takrorlaydi" },
+        { "id": "c", "text": "So'rovni bekor qilib, keshni tozalaydi" },
+        { "id": "d", "text": "Sahifani avtomatik yangilaydi" }
       ]
     },
     {
       "id": "q-030",
       "order": 30,
       "type": "single_choice",
+      "topic": "testing",
       "points": 1,
-      "correctOptionId": "b",
-      "prompt": "`debounce` texnikasi nima qiladi?",
+      "correctOptionId": "c",
+      "prompt": "Element ekranda YO'Q ekanini tekshirish uchun Testing Library'ning qaysi prefiksi ishlatiladi?",
       "options": [
-        { "id": "a", "text": "Funksiyani darhol chaqiradi" },
-        { "id": "b", "text": "Chaqiruvlar to'xtaguncha funksiya bajarilishini kechiktiradi" },
-        { "id": "c", "text": "Funksiyani belgilangan marta takrorlaydi" },
-        { "id": "d", "text": "Funksiyani butunlay bekor qiladi" }
+        { "id": "a", "text": "getBy…" },
+        { "id": "b", "text": "findBy…" },
+        { "id": "c", "text": "queryBy…" },
+        { "id": "d", "text": "getAllBy…" }
       ]
     },
     {
       "id": "q-031",
       "order": 31,
       "type": "open_text",
+      "topic": "fsd",
       "points": 2,
-      "prompt": "React haqiqiy DOM bilan solishtirish uchun qaysi mexanizmdan foydalanadi?",
-      "acceptedAnswers": [
-        "virtual dom",
-        "virtual-dom",
-        "virtual document object model",
-        "virtual dom (virtual dom)"
-      ]
+      "prompt": "FSD'da biznesga umuman aloqasi yo'q, qayta ishlatiladigan kod (UI-kit, API klient, utilitalar) qaysi qatlamda joylashadi? Qatlam nomini yozing.",
+      "acceptedAnswers": ["shared", "shared qatlami", "shared layer", "shared/"]
     },
     {
       "id": "q-032",
       "order": 32,
       "type": "open_text",
+      "topic": "testing",
       "points": 2,
-      "prompt": "Serverda yangi resurs yaratish uchun odatda qaysi HTTP metodi ishlatiladi?",
-      "acceptedAnswers": ["post", "post metodi", "post so'rovi", "http post"]
+      "prompt": "Har bir testning uch bosqichdan iborat tuzilishi qaysi formula bilan ataladi? Uch so'zni tartib bilan yozing.",
+      "acceptedAnswers": [
+        "arrange act assert",
+        "arrange, act, assert",
+        "aaa",
+        "aaa - arrange act assert"
+      ]
     },
     {
       "id": "q-033",
       "order": 33,
       "type": "open_text",
+      "topic": "tanstack-query",
       "points": 2,
-      "prompt": "Matn rangini o'zgartirish uchun qaysi CSS xossasi ishlatiladi?",
-      "acceptedAnswers": ["color", "color xossasi", "css color"]
+      "prompt": "Mutatsiyadan keyin keshni eskirgan deb belgilab, ro'yxatni qayta yuklash uchun `queryClient`ning qaysi metodi chaqiriladi? Metod nomini yozing.",
+      "acceptedAnswers": [
+        "invalidatequeries",
+        "invalidate queries",
+        "queryclient.invalidatequeries",
+        "invalidatequeries()"
+      ]
     },
     {
       "id": "q-034",
       "order": 34,
       "type": "open_text",
+      "topic": "testing",
       "points": 2,
-      "prompt": "JavaScriptda qayta tayinlab bo'lmaydigan o'zgaruvchini e'lon qilish uchun qaysi kalit so'z ishlatiladi?",
-      "acceptedAnswers": ["const", "const kalit so'zi"]
+      "prompt": "So'rov tugagach paydo bo'ladigan elementni kutish uchun Testing Library'ning qaysi prefiksi ishlatiladi?",
+      "acceptedAnswers": ["findby", "findby...", "find by", "findbytext", "findby…"]
     },
     {
       "id": "q-035",
       "order": 35,
       "type": "open_text",
+      "topic": "fsd",
       "points": 2,
-      "prompt": "API qisqartmasi to'liq qanday o'qiladi?",
-      "acceptedAnswers": [
-        "application programming interface",
-        "ilova dasturlash interfeysi",
-        "dasturlash interfeysi",
-        "amaliy dasturlash interfeysi"
-      ]
+      "prompt": "FSD'da har bir slice'ning public API'si qaysi fayl orqali ochiladi? Fayl nomini yozing.",
+      "acceptedAnswers": ["index.ts", "index ts", "indexts", "index", "index.tsx"]
     }
   ]
 }
