@@ -105,6 +105,10 @@ export const scoreAttempt = (exam: Exam, attempt: ExamAttempt): ExamScore => {
     percentage,
     passScore,
     passed: earnedPoints >= passScore,
+    questions: {
+      correct: results.filter((result) => result.isCorrect).length,
+      total: results.length,
+    },
     closed: {
       correct: closedResults.filter((result) => result.isCorrect).length,
       total: closedResults.length,

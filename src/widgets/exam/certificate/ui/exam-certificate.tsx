@@ -59,10 +59,10 @@ export const ExamCertificate = ({
           <div className={classes.stats}>
             <div className={classes.stat}>
               <span className={classes.statLabel}>
-                {t('certificate.score')}
+                {t('certificate.correctAnswers')}
               </span>
               <span className={classes.statValue}>
-                {`${score.earnedPoints} / ${score.totalPoints}`}
+                {`${score.questions.correct} / ${score.questions.total}`}
               </span>
             </div>
             <div className={classes.stat}>

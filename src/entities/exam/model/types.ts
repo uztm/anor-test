@@ -139,6 +139,8 @@ export interface ExamScore {
   percentage: number
   passScore: number
   passed: boolean
+  /** Correct answers out of the number of questions, ignoring point weights. */
+  questions: ScoreBreakdown
   closed: ScoreBreakdown
   open: ScoreBreakdown
   results: QuestionResult[]

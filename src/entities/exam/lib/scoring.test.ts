@@ -99,6 +99,19 @@ describe('scoreAttempt', () => {
     expect(score.passed).toBe(true)
     expect(score.closed).toStrictEqual({ correct: 2, total: 2 })
     expect(score.open).toStrictEqual({ correct: 1, total: 1 })
+    expect(score.questions).toStrictEqual({ correct: 3, total: 3 })
+  })
+
+  it('counts questions independently of their point weights', () => {
+    // The open question is worth 2 points, so points and question counts differ.
+    const score = scoreAttempt(
+      exam,
+      buildAttempt({ answers: { 'q-001': 'b', 'q-003': 'virtual dom' } }),
+    )
+
+    expect(score.totalPoints).toBe(4)
+    expect(score.earnedPoints).toBe(3)
+    expect(score.questions).toStrictEqual({ correct: 2, total: 3 })
   })
 
   it('scores an empty attempt as zero, never negative', () => {
