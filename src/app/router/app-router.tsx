@@ -32,8 +32,10 @@ export const appRouter: RouteObject[] = [
       },
     ],
   },
+  // The exam is the public entry point of this deployment, so unknown paths
+  // (including "/") land there instead of the authenticated home page.
   {
     path: '*',
-    element: <Navigate to={'/home'} />,
+    element: <Navigate to={'/exam'} replace={true} />,
   },
 ]
