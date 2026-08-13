@@ -1,0 +1,219 @@
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+/*
+ * The certificate is always laid out at the A4 landscape ratio and every inner
+ * size is expressed in container query units, so the same markup scales down
+ * for the on-screen preview and prints at exactly 297mm x 210mm.
+ */
+.container {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.certificate {
+  position: relative;
+  display: flex;
+  width: 100%;
+  aspect-ratio: 297 / 210;
+  padding: 2cqw;
+  overflow: hidden;
+  color: #1a1b1e;
+  background: #ffffff;
+  border-radius: var(--mantine-radius-md);
+  box-shadow: var(--mantine-shadow-sm);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.frame {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2cqw 4.5cqw;
+  text-align: center;
+  border: 0.28cqw solid #a30041;
+  border-radius: 0.8cqw;
+}
+
+.corner {
+  position: absolute;
+  width: 6cqw;
+  height: 6cqw;
+  border: 0.9cqw solid #a30041;
+  opacity: 0.14;
+}
+
+.cornerTopLeft {
+  top: 2cqw;
+  left: 2cqw;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cornerBottomRight {
+  right: 2cqw;
+  bottom: 2cqw;
+  border-top: none;
+  border-left: none;
+}
+
+.logo {
+  width: 18cqw;
+  height: auto;
+}
+
+.organization {
+  margin-top: 1cqw;
+  font-size: 1.15cqw;
+  font-weight: 600;
+  letter-spacing: 0.35cqw;
+  text-transform: uppercase;
+  color: #a30041;
+}
+
+.title {
+  margin-top: 2.2cqw;
+  font-size: 4.6cqw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.6cqw;
+}
+
+.subtitle {
+  margin-top: 0.9cqw;
+  font-size: 1.3cqw;
+  color: #5c5f66;
+}
+
+.awardedTo {
+  margin-top: 2.4cqw;
+  font-size: 1.25cqw;
+  color: #5c5f66;
+}
+
+.name {
+  margin-top: 0.8cqw;
+  padding-bottom: 0.8cqw;
+  font-size: 3.4cqw;
+  font-weight: 600;
+  line-height: 1.2;
+  border-bottom: 0.12cqw solid #dee2e6;
+  min-width: 45cqw;
+  max-width: 80cqw;
+}
+
+.description {
+  margin-top: 1.6cqw;
+  max-width: 66cqw;
+  font-size: 1.35cqw;
+  line-height: 1.5;
+  color: #343a40;
+}
+
+.stats {
+  display: flex;
+  gap: 5cqw;
+  margin-top: auto;
+  padding-top: 2cqw;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35cqw;
+}
+
+.statLabel {
+  font-size: 0.95cqw;
+  font-weight: 600;
+  letter-spacing: 0.12cqw;
+  text-transform: uppercase;
+  color: #868e96;
+}
+
+.statValue {
+  font-size: 1.9cqw;
+  font-weight: 700;
+}
+
+.statPassed {
+  color: #2b8a3e;
+}
+
+.statFailed {
+  color: #c92a2a;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2.4cqw;
+}
+
+.footerBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3cqw;
+  font-size: 0.95cqw;
+  color: #868e96;
+  text-align: left;
+}
+
+.footerBlockRight {
+  text-align: right;
+}
+
+.signatureLine {
+  width: 20cqw;
+  margin-bottom: 0.5cqw;
+  border-bottom: 0.12cqw solid #adb5bd;
+}
+
+.certificateId {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 1cqw;
+  color: #495057;
+}
+
+@media print {
+  :global(html),
+  :global(body) {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  /* Print the certificate alone: hide the rest of the app without unmounting it. */
+  :global(body) * {
+    visibility: hidden !important;
+  }
+
+  .container,
+  .container * {
+    visibility: visible !important;
+  }
+
+  .container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 297mm !important;
+    height: 210mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .certificate {
+    width: 297mm;
+    height: 210mm;
+    aspect-ratio: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

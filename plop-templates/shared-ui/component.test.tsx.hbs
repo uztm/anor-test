@@ -1,0 +1,12 @@
+import { screen } from '@testing-library/react'
+import { render } from 'shared/lib'
+import { describe, expect, it } from 'vitest'
+
+import {{pascalCase name}} from './{{kebabCase name}}'
+
+describe('{{pascalCase name}}', () => {
+  it('renders without crashing', () => {
+    render(<{{pascalCase name}} />)
+    expect(screen.getByText('{{pascalCase name}} component')).toBeInTheDocument()
+  })
+})

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: frontend-boilerplate-container
+    restart: always
+    image: frontend-boilerplate
+    build: .
+    ports:
+      - '3030:80'

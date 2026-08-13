@@ -1,0 +1,12 @@
+import { screen } from '@testing-library/react'
+import { render } from 'shared/lib'
+import { describe, expect, it } from 'vitest'
+
+import {{pascalCase (combinedName group name layer)}} from './{{kebabCase (combinedName group name layer)}}'
+
+describe('{{pascalCase (combinedName group name layer)}}', () => {
+  it('renders without crashing', () => {
+    render(<{{pascalCase (combinedName group name layer)}} />)
+    expect(screen.getByText('{{pascalCase (combinedName group name layer)}} component')).toBeInTheDocument()
+  })
+})

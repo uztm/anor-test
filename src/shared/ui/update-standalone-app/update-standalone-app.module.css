@@ -1,0 +1,20 @@
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.box {
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.title {
+  white-space: nowrap;
+}
+
+.hide {
+  display: none;
+}

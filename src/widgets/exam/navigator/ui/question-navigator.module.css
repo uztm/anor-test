@@ -1,0 +1,19 @@
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.current {
+  background-color: var(--mantine-color-blue-filled);
+}
+
+.answered {
+  background-color: var(--mantine-color-teal-filled);
+}
+
+.unanswered {
+  border: 1px solid var(--mantine-color-gray-5);
+  background-color: transparent;
+}

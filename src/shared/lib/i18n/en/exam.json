@@ -1,0 +1,116 @@
+{
+  "brand": {
+    "organization": "Anor Acceleration",
+    "track": "Frontend track",
+    "examTitle": "Frontend track knowledge assessment test",
+    "logoAlt": "Anor Acceleration logo"
+  },
+  "welcome": {
+    "title": "Frontend track knowledge assessment test",
+    "subtitle": "The official selection test of the Anor Acceleration programme. Choose a language and enter your full name before you begin.",
+    "language": "Exam language",
+    "localeUz": "Uzbek",
+    "localeRu": "Russian",
+    "nameLabel": "Full name",
+    "namePlaceholder": "For example: Alisher Rahimov",
+    "start": "Start the exam",
+    "rulesTitle": "Exam rules",
+    "ruleDuration": "You have {{minutes}} minutes to complete the exam.",
+    "ruleQuestions": "{{total}} questions in total: multiple choice and open ended.",
+    "ruleViolations": "After {{max}} violations the exam is submitted automatically.",
+    "ruleFullscreen": "The exam runs in fullscreen. Switching to another application or leaving fullscreen is recorded as a violation."
+  },
+  "validation": {
+    "nameRequired": "Enter your name",
+    "nameTooShort": "The name must be at least 3 characters long",
+    "nameTooLong": "The name must not exceed 60 characters",
+    "nameInvalidChars": "Only letters, spaces, apostrophes and hyphens are allowed"
+  },
+  "fullscreen": {
+    "deniedTitle": "Fullscreen is required",
+    "deniedMessage": "The browser refused to enter fullscreen. Try again to start the exam.",
+    "retry": "Try again"
+  },
+  "question": {
+    "counter": "Question {{current}} / {{total}}",
+    "points": "{{points}} point(s)",
+    "answerLabel": "Your answer",
+    "answerPlaceholder": "Type your answer here"
+  },
+  "header": {
+    "timeLeft": "Time left",
+    "violations": "Violations: {{current}} / {{max}}",
+    "progress": "Answered: {{current}} / {{total}}"
+  },
+  "navigation": {
+    "previous": "Previous",
+    "next": "Next",
+    "finish": "Finish the exam"
+  },
+  "navigator": {
+    "title": "Questions",
+    "current": "Current",
+    "answered": "Answered",
+    "unanswered": "Unanswered",
+    "goToQuestion": "Go to question {{number}}"
+  },
+  "submit": {
+    "title": "Finish the exam",
+    "message": "Once the exam is submitted you can no longer change your answers.",
+    "unansweredCount": "Unanswered questions: {{value}}",
+    "allAnswered": "Every question has been answered.",
+    "cancel": "Cancel",
+    "confirm": "Yes, finish"
+  },
+  "lockdown": {
+    "title": "Warning",
+    "alertTitle": "Exam mode violated",
+    "message": "If you leave now, the test will end and you will be scored with the points you have collected so far.",
+    "violationCount": "Violations recorded: {{current}} / {{max}}",
+    "return": "Return to test",
+    "leave": "Leave and finish"
+  },
+  "result": {
+    "title": "Exam result",
+    "passed": "Passed",
+    "failed": "Failed",
+    "participant": "Participant",
+    "language": "Language",
+    "timeSpent": "Time spent",
+    "violations": "Violations",
+    "score": "Points earned: {{earned}} / {{total}}",
+    "passScore": "{{score}} points are required to pass. Your result: {{percentage}}%.",
+    "closedQuestions": "Closed questions",
+    "openQuestions": "Open questions",
+    "review": "Answer review",
+    "yourAnswer": "Your answer",
+    "correctAnswer": "Correct answer",
+    "noAnswer": "No answer given",
+    "exit": "Exit",
+    "reason": {
+      "manual": "The exam was finished by the participant.",
+      "timeout": "The exam was submitted automatically: time ran out.",
+      "violationLimit": "The exam was submitted: the violation limit was exceeded.",
+      "leftExam": "The exam was submitted: the participant left the exam."
+    }
+  },
+  "certificate": {
+    "title": "CERTIFICATE",
+    "subtitle": "For the results of the knowledge assessment test",
+    "awardedTo": "This certificate is awarded to",
+    "description": "for completing the Frontend track knowledge assessment test within the Anor Acceleration programme",
+    "score": "Points earned",
+    "percentage": "Overall result",
+    "status": "Status",
+    "date": "Date of issue",
+    "certificateId": "Certificate number",
+    "signature": "Programme director",
+    "download": "Download PDF certificate",
+    "printHint": "In the print dialog choose \"Save as PDF\" as the destination."
+  },
+  "dataError": {
+    "title": "The exam data could not be loaded",
+    "message": "The exam.json files are malformed. Fix the following problems:",
+    "unknown": "Unknown error"
+  }
+}

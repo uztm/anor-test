@@ -1,0 +1,28 @@
+.card {
+  border-radius: 12px;
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 38px 150px 18px;
+  align-items: center;
+  gap: 12px;
+  height: 59px;
+}
+.card.collapsed {
+  grid-template-columns: 38px;
+}
+
+.card:hover {
+  background: var(--mantine-color-default-hover);
+}
+
+.avatar {
+  align-self: flex-start;
+}
+
+.text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

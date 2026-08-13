@@ -1,0 +1,41 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  position: relative;
+}
+
+.locale {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+
+.background {
+  background-image: url('/public/assets/anor-frame.png');
+  background-size: cover;
+  background-position: bottom right;
+  justify-content: flex-end;
+}
+
+.content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-gray-bg);
+}
+
+.logo {
+  height: 100px;
+}
+
+.card {
+  width: 450px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}

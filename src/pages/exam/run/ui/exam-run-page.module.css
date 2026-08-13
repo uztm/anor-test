@@ -1,0 +1,10 @@
+.page {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.page input,
+.page textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}

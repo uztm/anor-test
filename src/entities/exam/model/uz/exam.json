@@ -1,0 +1,484 @@
+{
+  "id": "demo-exam-2026",
+  "version": 1,
+  "config": {
+    "durationMinutes": 45,
+    "totalQuestions": 35,
+    "passPercentage": 60,
+    "maxViolations": 3,
+    "shuffleQuestions": false,
+    "shuffleOptions": false
+  },
+  "questions": [
+    {
+      "id": "q-001",
+      "order": 1,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "React komponentida holatni saqlash uchun qaysi hook ishlatiladi?",
+      "options": [
+        { "id": "a", "text": "useEffect" },
+        { "id": "b", "text": "useState" },
+        { "id": "c", "text": "useMemo" },
+        { "id": "d", "text": "useRef" }
+      ]
+    },
+    {
+      "id": "q-002",
+      "order": 2,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Yon effektlarni (side effects) bajarish uchun qaysi hook mo'ljallangan?",
+      "options": [
+        { "id": "a", "text": "useState" },
+        { "id": "b", "text": "useMemo" },
+        { "id": "c", "text": "useEffect" },
+        { "id": "d", "text": "useId" }
+      ]
+    },
+    {
+      "id": "q-003",
+      "order": 3,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "JSX kod oxir-oqibat nimaga kompilyatsiya qilinadi?",
+      "options": [
+        { "id": "a", "text": "HTML satriga" },
+        { "id": "b", "text": "React elementlarini yaratuvchi funksiya chaqiruvlariga" },
+        { "id": "c", "text": "CSS qoidalariga" },
+        { "id": "d", "text": "JSON obyektiga" }
+      ]
+    },
+    {
+      "id": "q-004",
+      "order": 4,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "Ro'yxatni render qilishda `key` propi nima uchun kerak?",
+      "options": [
+        { "id": "a", "text": "Elementni stillash uchun" },
+        { "id": "b", "text": "Ro'yxat elementlarini o'zgarishlar orasida aniqlash uchun" },
+        { "id": "c", "text": "Hodisalarni biriktirish uchun" },
+        { "id": "d", "text": "Proplar turini tekshirish uchun" }
+      ]
+    },
+    {
+      "id": "q-005",
+      "order": 5,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "`useMemo` hooki asosan nima uchun ishlatiladi?",
+      "options": [
+        { "id": "a", "text": "Og'ir hisob-kitob natijasini keshlash uchun" },
+        { "id": "b", "text": "DOM elementiga havola olish uchun" },
+        { "id": "c", "text": "Global holatni saqlash uchun" },
+        { "id": "d", "text": "Server bilan so'rov almashish uchun" }
+      ]
+    },
+    {
+      "id": "q-006",
+      "order": 6,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "Qayta renderni keltirib chiqarmaydigan o'zgaruvchan havolani qaysi hook qaytaradi?",
+      "options": [
+        { "id": "a", "text": "useRef" },
+        { "id": "b", "text": "useState" },
+        { "id": "c", "text": "useMemo" },
+        { "id": "d", "text": "useCallback" }
+      ]
+    },
+    {
+      "id": "q-007",
+      "order": 7,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Vite dev serveri sukut bo'yicha qaysi portda ishga tushadi?",
+      "options": [
+        { "id": "a", "text": "3000" },
+        { "id": "b", "text": "8080" },
+        { "id": "c", "text": "5173" },
+        { "id": "d", "text": "4200" }
+      ]
+    },
+    {
+      "id": "q-008",
+      "order": 8,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "Vite loyihasining production build'ini qaysi buyruq yaratadi?",
+      "options": [
+        { "id": "a", "text": "vite serve" },
+        { "id": "b", "text": "vite build" },
+        { "id": "c", "text": "vite dev" },
+        { "id": "d", "text": "vite preview" }
+      ]
+    },
+    {
+      "id": "q-009",
+      "order": 9,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "TypeScriptda qiymat `string` yoki `number` bo'lishi mumkinligi qanday tavsiflanadi?",
+      "options": [
+        { "id": "a", "text": "string & number" },
+        { "id": "b", "text": "string | number" },
+        { "id": "c", "text": "any" },
+        { "id": "d", "text": "unknown" }
+      ]
+    },
+    {
+      "id": "q-010",
+      "order": 10,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "CSSda `flex-direction: column` nima qiladi?",
+      "options": [
+        { "id": "a", "text": "Elementlarni gorizontal joylashtiradi" },
+        { "id": "b", "text": "Elementlarni vertikal joylashtiradi" },
+        { "id": "c", "text": "Elementlarni grid katakchalariga bo'ladi" },
+        { "id": "d", "text": "Elementlarni yashiradi" }
+      ]
+    },
+    {
+      "id": "q-011",
+      "order": 11,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Resurs topilmaganda server qaysi HTTP status kodini qaytaradi?",
+      "options": [
+        { "id": "a", "text": "200" },
+        { "id": "b", "text": "301" },
+        { "id": "c", "text": "404" },
+        { "id": "d", "text": "500" }
+      ]
+    },
+    {
+      "id": "q-012",
+      "order": 12,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "Resurs muvaffaqiyatli yaratilganini qaysi status kodi bildiradi?",
+      "options": [
+        { "id": "a", "text": "200" },
+        { "id": "b", "text": "201" },
+        { "id": "c", "text": "204" },
+        { "id": "d", "text": "202" }
+      ]
+    },
+    {
+      "id": "q-013",
+      "order": 13,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Massiv oxiriga element qo'shish uchun qaysi metod ishlatiladi?",
+      "options": [
+        { "id": "a", "text": "shift()" },
+        { "id": "b", "text": "unshift()" },
+        { "id": "c", "text": "push()" },
+        { "id": "d", "text": "pop()" }
+      ]
+    },
+    {
+      "id": "q-014",
+      "order": 14,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "`Array.prototype.map()` nimani qaytaradi?",
+      "options": [
+        { "id": "a", "text": "Yangi massiv" },
+        { "id": "b", "text": "O'zgartirilgan asl massiv" },
+        { "id": "c", "text": "Obyekt" },
+        { "id": "d", "text": "undefined" }
+      ]
+    },
+    {
+      "id": "q-015",
+      "order": 15,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "`const` va `let` o'rtasidagi asosiy farq nima?",
+      "options": [
+        { "id": "a", "text": "`const` bilan e'lon qilingan bog'lanish qayta tayinlanmaydi" },
+        { "id": "b", "text": "`const` faqat raqamlar uchun ishlatiladi" },
+        { "id": "c", "text": "Ular orasida farq yo'q" },
+        { "id": "d", "text": "`let` har doim global ko'rinish sohasiga ega" }
+      ]
+    },
+    {
+      "id": "q-016",
+      "order": 16,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "JavaScriptda `===` operatori nimani bildiradi?",
+      "options": [
+        { "id": "a", "text": "Qiymat tayinlash" },
+        { "id": "b", "text": "Tur keltirmasdan qat'iy tenglikni tekshirish" },
+        { "id": "c", "text": "Tur keltirib tenglikni tekshirish" },
+        { "id": "d", "text": "Tengsizlikni tekshirish" }
+      ]
+    },
+    {
+      "id": "q-017",
+      "order": 17,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Xatolik bilan yakunlangan Promise qaysi holatga o'tadi?",
+      "options": [
+        { "id": "a", "text": "pending" },
+        { "id": "b", "text": "fulfilled" },
+        { "id": "c", "text": "rejected" },
+        { "id": "d", "text": "resolved" }
+      ]
+    },
+    {
+      "id": "q-018",
+      "order": 18,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "`async` funksiya har doim nimani qaytaradi?",
+      "options": [
+        { "id": "a", "text": "Satrni" },
+        { "id": "b", "text": "Promise'ni" },
+        { "id": "c", "text": "Callback'ni" },
+        { "id": "d", "text": "undefined" }
+      ]
+    },
+    {
+      "id": "q-019",
+      "order": 19,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "`localStorage`dagi ma'lumot qancha vaqt saqlanadi?",
+      "options": [
+        { "id": "a", "text": "Tab yopilgunga qadar" },
+        { "id": "b", "text": "Qo'lda tozalanmaguncha" },
+        { "id": "c", "text": "Bir soat davomida" },
+        { "id": "d", "text": "Sahifa yangilangunga qadar" }
+      ]
+    },
+    {
+      "id": "q-020",
+      "order": 20,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "`sessionStorage` qachon avtomatik tozalanadi?",
+      "options": [
+        { "id": "a", "text": "Tab yopilganda" },
+        { "id": "b", "text": "Hech qachon" },
+        { "id": "c", "text": "Har soatda" },
+        { "id": "d", "text": "Sahifa yangilanganda" }
+      ]
+    },
+    {
+      "id": "q-021",
+      "order": 21,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "React komponenti nomi qanday yozilishi kerak?",
+      "options": [
+        { "id": "a", "text": "camelCase" },
+        { "id": "b", "text": "PascalCase" },
+        { "id": "c", "text": "kebab-case" },
+        { "id": "d", "text": "snake_case" }
+      ]
+    },
+    {
+      "id": "q-022",
+      "order": 22,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "`npm ci` buyrug'i nima qiladi?",
+      "options": [
+        { "id": "a", "text": "Bog'liqliklarni lock fayl asosida toza o'rnatadi" },
+        { "id": "b", "text": "Barcha paketlarni oxirgi versiyaga yangilaydi" },
+        { "id": "c", "text": "Testlarni ishga tushiradi" },
+        { "id": "d", "text": "Loyihani build qiladi" }
+      ]
+    },
+    {
+      "id": "q-023",
+      "order": 23,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "Yangi branch yaratib, unga o'tish uchun qaysi buyruq ishlatiladi?",
+      "options": [
+        { "id": "a", "text": "git merge" },
+        { "id": "b", "text": "git checkout -b" },
+        { "id": "c", "text": "git clone" },
+        { "id": "d", "text": "git pull" }
+      ]
+    },
+    {
+      "id": "q-024",
+      "order": 24,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "a",
+      "prompt": "DOM qisqartmasi nimani anglatadi?",
+      "options": [
+        { "id": "a", "text": "Document Object Model" },
+        { "id": "b", "text": "Data Object Manager" },
+        { "id": "c", "text": "Digital Ordered Map" },
+        { "id": "d", "text": "Document Oriented Markup" }
+      ]
+    },
+    {
+      "id": "q-025",
+      "order": 25,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "HTMLda eng yuqori darajali sarlavha uchun qaysi teg ishlatiladi?",
+      "options": [
+        { "id": "a", "text": "<h6>" },
+        { "id": "b", "text": "<h1>" },
+        { "id": "c", "text": "<title>" },
+        { "id": "d", "text": "<header>" }
+      ]
+    },
+    {
+      "id": "q-026",
+      "order": 26,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "Navigatsiya bloki uchun qaysi semantik teg to'g'ri keladi?",
+      "options": [
+        { "id": "a", "text": "<div>" },
+        { "id": "b", "text": "<nav>" },
+        { "id": "c", "text": "<section>" },
+        { "id": "d", "text": "<aside>" }
+      ]
+    },
+    {
+      "id": "q-027",
+      "order": 27,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Qaysi CSS birligi ildiz element shrift o'lchamiga nisbatan hisoblanadi?",
+      "options": [
+        { "id": "a", "text": "px" },
+        { "id": "b", "text": "em" },
+        { "id": "c", "text": "rem" },
+        { "id": "d", "text": "vh" }
+      ]
+    },
+    {
+      "id": "q-028",
+      "order": 28,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "`z-index` xossasi nimani boshqaradi?",
+      "options": [
+        { "id": "a", "text": "Elementning shaffofligini" },
+        { "id": "b", "text": "Elementlarning ustma-ust joylashuv tartibini" },
+        { "id": "c", "text": "Elementning o'lchamini" },
+        { "id": "d", "text": "Pozitsiyalash turini" }
+      ]
+    },
+    {
+      "id": "q-029",
+      "order": 29,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "c",
+      "prompt": "Quyidagilardan qaysi biri holatni boshqarish kutubxonasi hisoblanadi?",
+      "options": [
+        { "id": "a", "text": "axios" },
+        { "id": "b", "text": "dayjs" },
+        { "id": "c", "text": "zustand" },
+        { "id": "d", "text": "vite" }
+      ]
+    },
+    {
+      "id": "q-030",
+      "order": 30,
+      "type": "single_choice",
+      "points": 1,
+      "correctOptionId": "b",
+      "prompt": "`debounce` texnikasi nima qiladi?",
+      "options": [
+        { "id": "a", "text": "Funksiyani darhol chaqiradi" },
+        { "id": "b", "text": "Chaqiruvlar to'xtaguncha funksiya bajarilishini kechiktiradi" },
+        { "id": "c", "text": "Funksiyani belgilangan marta takrorlaydi" },
+        { "id": "d", "text": "Funksiyani butunlay bekor qiladi" }
+      ]
+    },
+    {
+      "id": "q-031",
+      "order": 31,
+      "type": "open_text",
+      "points": 2,
+      "prompt": "React haqiqiy DOM bilan solishtirish uchun qaysi mexanizmdan foydalanadi?",
+      "acceptedAnswers": [
+        "virtual dom",
+        "virtual-dom",
+        "virtual document object model",
+        "virtual dom (virtual dom)"
+      ]
+    },
+    {
+      "id": "q-032",
+      "order": 32,
+      "type": "open_text",
+      "points": 2,
+      "prompt": "Serverda yangi resurs yaratish uchun odatda qaysi HTTP metodi ishlatiladi?",
+      "acceptedAnswers": ["post", "post metodi", "post so'rovi", "http post"]
+    },
+    {
+      "id": "q-033",
+      "order": 33,
+      "type": "open_text",
+      "points": 2,
+      "prompt": "Matn rangini o'zgartirish uchun qaysi CSS xossasi ishlatiladi?",
+      "acceptedAnswers": ["color", "color xossasi", "css color"]
+    },
+    {
+      "id": "q-034",
+      "order": 34,
+      "type": "open_text",
+      "points": 2,
+      "prompt": "JavaScriptda qayta tayinlab bo'lmaydigan o'zgaruvchini e'lon qilish uchun qaysi kalit so'z ishlatiladi?",
+      "acceptedAnswers": ["const", "const kalit so'zi"]
+    },
+    {
+      "id": "q-035",
+      "order": 35,
+      "type": "open_text",
+      "points": 2,
+      "prompt": "API qisqartmasi to'liq qanday o'qiladi?",
+      "acceptedAnswers": [
+        "application programming interface",
+        "ilova dasturlash interfeysi",
+        "dasturlash interfeysi",
+        "amaliy dasturlash interfeysi"
+      ]
+    }
+  ]
+}

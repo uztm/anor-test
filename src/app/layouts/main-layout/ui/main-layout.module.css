@@ -1,0 +1,167 @@
+/* LAYOUT */
+.layout {
+  min-height: 100vh;
+  padding-left: 270px;
+}
+
+.layout.collapsed {
+  padding-left: 80px;
+}
+
+.main {
+  padding: 16px;
+  background: var(--light-gray-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 270px;
+  transition: width 0.2s linear;
+}
+
+.layout.collapsed .sidebar {
+  width: 80px;
+}
+
+.logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75px;
+  padding: 20px;
+}
+
+.layout.collapsed .logo {
+  padding: 20px;
+}
+
+.menuSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.collapsedWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in 0.5s;
+}
+
+.collapsedWrapper:before,
+.collapsedWrapper:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--mantine-primary-color-9);
+}
+
+.collapsedWrapper:before {
+  top: -10px;
+  z-index: 1;
+}
+
+.collapsedWrapper:after {
+  bottom: -10px;
+  z-index: 1;
+}
+
+.collapsedButton {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mantine-primary-color-9);
+  color: white;
+  border-radius: 0 8px 8px 0;
+}
+
+.collapsedButton:before,
+.collapsedButton:after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: var(--light-gray-bg);
+  z-index: 2;
+  left: 0;
+}
+
+.collapsedButton:before {
+  top: -10px;
+  border-bottom-left-radius: 65%;
+}
+
+.collapsedButton:after {
+  bottom: -10px;
+  border-top-left-radius: 65%;
+}
+
+.layout.collapsed .collapsedIcon {
+  transform: rotate(180deg);
+}
+
+.sidebar:hover .collapsedWrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* MENU */
+.menu {
+  display: grid;
+  gap: 4px;
+}
+.layout.collapsed .menu {
+  justify-content: center;
+}
+
+.link {
+  height: 46px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.link.active {
+  background: var(--mantine-primary-color-0);
+  color: var(--mantine-primary-color-9);
+}
+
+.layout.collapsed .link {
+  padding-inline: 14px;
+}
+
+.linkLabel {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.layout.collapsed .linkSection {
+  margin-right: 0;
+}
+
+.children {
+  position: relative;
+}
+
+.children:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 3px;
+  bottom: 3px;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--mantine-color-gray-1);
+}

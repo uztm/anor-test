@@ -1,0 +1,116 @@
+{
+  "brand": {
+    "organization": "Anor Acceleration",
+    "track": "Frontend yo'nalishi",
+    "examTitle": "Frontend yo'nalishi bo'yicha bilimlarni baholash testi",
+    "logoAlt": "Anor Acceleration logotipi"
+  },
+  "welcome": {
+    "title": "Frontend yo'nalishi bo'yicha bilimlarni baholash testi",
+    "subtitle": "Anor Acceleration dasturining rasmiy saralash testi. Boshlashdan oldin tilni tanlang va to'liq ismingizni kiriting.",
+    "language": "Test tili",
+    "localeUz": "O'zbekcha",
+    "localeRu": "Ruscha",
+    "nameLabel": "To'liq ism",
+    "namePlaceholder": "Masalan: Alisher Rahimov",
+    "start": "Testni boshlash",
+    "rulesTitle": "Test qoidalari",
+    "ruleDuration": "Testni bajarish uchun {{minutes}} daqiqa beriladi.",
+    "ruleQuestions": "Jami {{total}} ta savol: yopiq va ochiq turdagi.",
+    "ruleViolations": "{{max}} marta qoidabuzarlikdan so'ng test avtomatik yakunlanadi.",
+    "ruleFullscreen": "Test to'liq ekran rejimida o'tkaziladi. Boshqa ilovaga o'tish yoki to'liq ekrandan chiqish qoidabuzarlik sifatida qayd etiladi."
+  },
+  "validation": {
+    "nameRequired": "Ismingizni kiriting",
+    "nameTooShort": "Ism kamida 3 ta belgidan iborat bo'lishi kerak",
+    "nameTooLong": "Ism 60 ta belgidan oshmasligi kerak",
+    "nameInvalidChars": "Faqat harflar, bo'sh joy, apostrof va defis ishlatilishi mumkin"
+  },
+  "fullscreen": {
+    "deniedTitle": "To'liq ekran rejimi talab qilinadi",
+    "deniedMessage": "Brauzer to'liq ekran rejimiga o'tishga ruxsat bermadi. Testni boshlash uchun qayta urinib ko'ring.",
+    "retry": "Qayta urinish"
+  },
+  "question": {
+    "counter": "{{current}}-savol / {{total}}",
+    "points": "{{points}} ball",
+    "answerLabel": "Sizning javobingiz",
+    "answerPlaceholder": "Javobni shu yerga yozing"
+  },
+  "header": {
+    "timeLeft": "Qolgan vaqt",
+    "violations": "Qoidabuzarlik: {{current}} / {{max}}",
+    "progress": "Javob berilgan: {{current}} / {{total}}"
+  },
+  "navigation": {
+    "previous": "Oldingi",
+    "next": "Keyingi",
+    "finish": "Testni yakunlash"
+  },
+  "navigator": {
+    "title": "Savollar ro'yxati",
+    "current": "Joriy",
+    "answered": "Javob berilgan",
+    "unanswered": "Javobsiz",
+    "goToQuestion": "{{number}}-savolga o'tish"
+  },
+  "submit": {
+    "title": "Testni yakunlash",
+    "message": "Testni yakunlaganingizdan so'ng javoblarni o'zgartirib bo'lmaydi.",
+    "unansweredCount": "Javobsiz savollar: {{value}}",
+    "allAnswered": "Barcha savollarga javob berilgan.",
+    "cancel": "Bekor qilish",
+    "confirm": "Ha, yakunlash"
+  },
+  "lockdown": {
+    "title": "Diqqat",
+    "alertTitle": "Test rejimi buzildi",
+    "message": "Agar hozir chiqib ketsangiz, test yakunlanadi va siz shu paytgacha to'plagan ballaringiz bilan baholanasiz.",
+    "violationCount": "Qayd etilgan qoidabuzarliklar: {{current}} / {{max}}",
+    "return": "Testga qaytish",
+    "leave": "Chiqish va yakunlash"
+  },
+  "result": {
+    "title": "Test natijasi",
+    "passed": "O'tdi",
+    "failed": "O'tmadi",
+    "participant": "Ishtirokchi",
+    "language": "Til",
+    "timeSpent": "Sarflangan vaqt",
+    "violations": "Qoidabuzarliklar",
+    "score": "To'plangan ball: {{earned}} / {{total}}",
+    "passScore": "O'tish uchun {{score}} ball kerak. Sizning natijangiz: {{percentage}}%.",
+    "closedQuestions": "Yopiq savollar",
+    "openQuestions": "Ochiq savollar",
+    "review": "Javoblar tahlili",
+    "yourAnswer": "Sizning javobingiz",
+    "correctAnswer": "To'g'ri javob",
+    "noAnswer": "Javob berilmagan",
+    "exit": "Chiqish",
+    "reason": {
+      "manual": "Test ishtirokchi tomonidan yakunlandi.",
+      "timeout": "Vaqt tugagani uchun test avtomatik yakunlandi.",
+      "violationLimit": "Qoidabuzarliklar chegarasi oshgani uchun test yakunlandi.",
+      "leftExam": "Ishtirokchi testni tark etgani uchun yakunlandi."
+    }
+  },
+  "certificate": {
+    "title": "SERTIFIKAT",
+    "subtitle": "Bilimlarni baholash testi natijalari bo'yicha",
+    "awardedTo": "Ushbu sertifikat quyidagi ishtirokchiga taqdim etiladi",
+    "description": "Anor Acceleration dasturi doirasida Frontend yo'nalishi bo'yicha bilimlarni baholash testini topshirgani uchun",
+    "score": "To'plangan ball",
+    "percentage": "Umumiy natija",
+    "status": "Holat",
+    "date": "Berilgan sana",
+    "certificateId": "Sertifikat raqami",
+    "signature": "Dastur rahbari",
+    "download": "PDF sertifikatni yuklab olish",
+    "printHint": "Chop etish oynasida printer sifatida «PDF sifatida saqlash» ni tanlang."
+  },
+  "dataError": {
+    "title": "Test ma'lumotlarini yuklab bo'lmadi",
+    "message": "exam.json fayllari noto'g'ri to'ldirilgan. Quyidagi xatoliklarni tuzating:",
+    "unknown": "Noma'lum xatolik"
+  }
+}
