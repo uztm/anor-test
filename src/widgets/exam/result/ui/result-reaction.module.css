@@ -1,0 +1,24 @@
+/*
+ * Decorative clip sitting in the normal result flow, centred on the page.
+ * `pointer-events: none` keeps it from swallowing clicks.
+ */
+.reaction {
+  width: 220px;
+  max-width: 100%;
+  margin-inline: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.18));
+}
+
+@media (max-width: 48em) {
+  .reaction {
+    width: 160px;
+  }
+}
+
+/* Never part of the printed certificate. */
+@media print {
+  .reaction {
+    display: none !important;
+  }
+}

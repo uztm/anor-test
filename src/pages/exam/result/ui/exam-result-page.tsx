@@ -6,7 +6,11 @@ import {
 } from 'entities/exam'
 import { exitFullscreen } from 'shared/lib'
 import { ExamCertificate } from 'widgets/exam/certificate'
-import { ResultReview, ResultSummary } from 'widgets/exam/result'
+import {
+  ResultReaction,
+  ResultReview,
+  ResultSummary,
+} from 'widgets/exam/result'
 
 import { Button, Container, Group, Stack, Text } from '@mantine/core'
 import { RiDownloadLine, RiLogoutBoxLine } from '@remixicon/react'
@@ -64,7 +68,7 @@ export const ExamResultPage = () => {
             {t('certificate.printHint')}
           </Text>
         </Stack>
-
+        <ResultReaction earnedPoints={score.earnedPoints} />
         <ResultSummary attempt={attempt} score={score} />
         <ResultReview results={score.results} />
 

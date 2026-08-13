@@ -1,4 +1,5 @@
 import { requestFullscreen } from 'shared/lib'
+import { ReactionVideo } from 'shared/ui'
 
 import { Alert, Button, Group, Modal, Stack, Text } from '@mantine/core'
 import { RiAlertLine } from '@remixicon/react'
@@ -44,6 +45,8 @@ export const LockdownWarningModal = ({
       title={t('lockdown.title')}
     >
       <Stack gap={'md'}>
+        <ReactionVideo fileName={'cheating.webm'} maxHeight={180} />
+
         <Alert
           variant={'light'}
           color={'red'}
