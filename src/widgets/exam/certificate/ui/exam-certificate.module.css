@@ -104,6 +104,19 @@
   border-bottom: 0.12cqw solid #dee2e6;
   min-width: 45cqw;
   max-width: 80cqw;
+  /* Long names wrap onto a second line instead of overflowing the frame. */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Applied from JS once the name is long enough to need a smaller type size. */
+.nameMedium {
+  font-size: 2.7cqw;
+}
+
+.nameLong {
+  font-size: 2.1cqw;
 }
 
 .description {
@@ -182,14 +195,28 @@
 }
 
 @media print {
-  :global(html),
-  :global(body) {
+  :global(html) {
+    height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
     background: #ffffff !important;
   }
 
-  /* Print the certificate alone: hide the rest of the app without unmounting it. */
+  /*
+   * The rest of the app stays mounted but hidden. `visibility: hidden` alone
+   * keeps its layout, which pushes the document past one page and spills the
+   * certificate border onto a second sheet — so the body is also clamped to a
+   * single page box with overflow hidden.
+   */
+  :global(body) {
+    width: 297mm !important;
+    height: 210mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+  }
+
   :global(body) * {
     visibility: hidden !important;
   }
@@ -200,20 +227,29 @@
   }
 
   .container {
-    position: fixed !important;
+    position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 297mm !important;
-    height: 210mm !important;
     margin: 0 !important;
     padding: 0 !important;
+    overflow: hidden !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .certificate {
+    /* A hair under 210mm: browsers round page boxes up and a single stray
+       hairline is enough to trigger a second, near-empty page. */
     width: 297mm;
-    height: 210mm;
+    height: 208mm;
     aspect-ratio: auto;
+    overflow: hidden;
     border-radius: 0;
     box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    page-break-after: avoid;
   }
 }

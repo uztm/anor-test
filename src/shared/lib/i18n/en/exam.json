@@ -20,6 +20,11 @@
     "ruleViolations": "After {{max}} violations the exam is submitted automatically.",
     "ruleFullscreen": "The exam runs in fullscreen. Switching to another application or leaving fullscreen is recorded as a violation."
   },
+  "alreadyCompleted": {
+    "title": "The exam has already been taken",
+    "message": "This exam may only be taken once. Your attempt has already been recorded and cannot be repeated.",
+    "viewResult": "View result and certificate"
+  },
   "validation": {
     "nameRequired": "Enter your name",
     "nameTooShort": "The name must be at least 3 characters long",

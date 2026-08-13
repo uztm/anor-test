@@ -112,7 +112,6 @@ export interface IExamStore {
   setLocale: (locale: ExamLocale) => void
   logViolation: (type: ViolationType) => void
   submit: (reason: SubmitReason) => void
-  reset: () => void
 }
 
 export interface QuestionResult {

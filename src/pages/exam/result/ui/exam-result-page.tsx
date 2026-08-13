@@ -19,7 +19,6 @@ export const ExamResultPage = () => {
   const { exam, error } = safeLoadExam()
 
   const attempt = useExamStore((state) => state.attempt)
-  const reset = useExamStore((state) => state.reset)
 
   if (!exam) {
     return <ExamDataError error={error} />
@@ -35,9 +34,10 @@ export const ExamResultPage = () => {
 
   const score = scoreAttempt(exam, attempt)
 
+  // The submitted attempt is deliberately kept: it is the record that stops a
+  // second sitting, and it keeps the certificate available for re-download.
   const handleExit = async () => {
     await exitFullscreen()
-    reset()
     await navigate('/exam')
   }
 

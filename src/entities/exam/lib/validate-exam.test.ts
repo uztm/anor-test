@@ -80,13 +80,15 @@ describe('validateExam', () => {
 })
 
 describe('loadExam', () => {
+  // Asserted against the files themselves, never against seed content, so
+  // swapping in real questions cannot break this test.
   it('merges both locale files into one exam', () => {
     const exam = loadExam()
+    const { totalQuestions } = exam.config
 
-    expect(exam.id).toBe('demo-exam-2026')
-    expect(exam.config.totalQuestions).toBe(35)
-    expect(exam.locales.uz.questions).toHaveLength(35)
-    expect(exam.locales.ru.questions).toHaveLength(35)
+    expect(exam.id).not.toBe('')
+    expect(exam.locales.uz.questions).toHaveLength(totalQuestions)
+    expect(exam.locales.ru.questions).toHaveLength(totalQuestions)
   })
 
   it('returns the same instance on repeated calls', () => {

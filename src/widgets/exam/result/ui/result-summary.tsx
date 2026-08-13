@@ -5,6 +5,8 @@ import type {
   SubmitReason,
 } from 'entities/exam'
 
+import classes from './result-summary.module.css'
+
 import {
   Badge,
   Card,
@@ -50,11 +52,13 @@ interface StatProps {
 }
 
 const Stat = ({ label, value }: Readonly<StatProps>) => (
-  <Stack gap={2}>
+  <Stack gap={2} miw={0}>
     <Text size={'xs'} c={'dimmed'} tt={'uppercase'} fw={600}>
       {label}
     </Text>
-    <Text fw={500}>{value}</Text>
+    <Text fw={500} className={classes.statValue}>
+      {value}
+    </Text>
   </Stack>
 )
 

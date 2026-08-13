@@ -171,15 +171,17 @@ export const useExamStore = create<IExamStore>()(
           state.attempt.submittedAt = Date.now()
           state.attempt.submitReason = reason
         }),
-
-      reset: () =>
-        set((state) => {
-          state.attempt = null
-        }),
     })),
     {
       name: EXAM_STORAGE_KEY,
-      storage: createJSONStorage(() => sessionStorage),
+      /*
+       * localStorage, not sessionStorage: the submitted attempt has to outlive
+       * the tab so a participant cannot simply reopen the page and sit the
+       * exam again. This is per browser profile only — a different browser,
+       * a private window or cleared storage all bypass it. Enforcing one
+       * attempt per person needs a backend.
+       */
+      storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({ attempt: state.attempt }) as IExamStore,
     },
   ),

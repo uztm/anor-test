@@ -20,6 +20,11 @@
     "ruleViolations": "{{max}} marta qoidabuzarlikdan so'ng test avtomatik yakunlanadi.",
     "ruleFullscreen": "Test to'liq ekran rejimida o'tkaziladi. Boshqa ilovaga o'tish yoki to'liq ekrandan chiqish qoidabuzarlik sifatida qayd etiladi."
   },
+  "alreadyCompleted": {
+    "title": "Test allaqachon topshirilgan",
+    "message": "Bu testni faqat bir marta topshirish mumkin. Sizning urinishingiz allaqachon qayd etilgan va qayta topshirishga ruxsat berilmaydi.",
+    "viewResult": "Natija va sertifikatni ko'rish"
+  },
   "validation": {
     "nameRequired": "Ismingizni kiriting",
     "nameTooShort": "Ism kamida 3 ta belgidan iborat bo'lishi kerak",

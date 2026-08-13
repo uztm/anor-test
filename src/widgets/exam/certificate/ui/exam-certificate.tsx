@@ -15,6 +15,23 @@ const LOCALE_TAGS = {
   ru: 'ru-RU',
 } as const
 
+const MEDIUM_NAME_LENGTH = 24
+
+const LONG_NAME_LENGTH = 36
+
+/** Steps the name down a size or two so long full names still fit the frame. */
+const getNameClass = (name: string): string => {
+  if (name.length > LONG_NAME_LENGTH) {
+    return `${classes.name} ${classes.nameLong}`
+  }
+
+  if (name.length > MEDIUM_NAME_LENGTH) {
+    return `${classes.name} ${classes.nameMedium}`
+  }
+
+  return classes.name
+}
+
 /** Stable, readable id derived from the attempt itself — no randomness. */
 const buildCertificateId = (attempt: ExamAttempt): string =>
   `AA-FE-${attempt.startedAt.toString(36).toUpperCase()}`
@@ -50,7 +67,9 @@ export const ExamCertificate = ({
           <div className={classes.subtitle}>{t('certificate.subtitle')}</div>
 
           <div className={classes.awardedTo}>{t('certificate.awardedTo')}</div>
-          <div className={classes.name}>{attempt.participantName}</div>
+          <div className={getNameClass(attempt.participantName)}>
+            {attempt.participantName}
+          </div>
 
           <div className={classes.description}>
             {t('certificate.description')}

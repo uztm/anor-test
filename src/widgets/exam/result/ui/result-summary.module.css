@@ -1,0 +1,6 @@
+/* Long full names must wrap inside their grid cell instead of overflowing it. */
+.statValue {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
