@@ -24,6 +24,7 @@ export const QuestionCard = ({
 }: Readonly<QuestionCardProps>) => {
   const { t } = useTranslation('exam')
 
+
   return (
     <Card withBorder={true} radius={'md'} padding={'lg'}>
       <Stack gap={'md'}>
